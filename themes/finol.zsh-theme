@@ -35,7 +35,8 @@ function rvm_prompt_info() {
 }
 
 local rvm_ruby='$(rvm_prompt_info)'
-local current_dir='${PWD/#$HOME/~}'
+# local current_dir='${PWD/#$HOME/~}'
+local current_dir='%1~'
 local git_info='$(git_prompt_info)'
 
 
